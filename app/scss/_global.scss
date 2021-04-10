@@ -22,6 +22,12 @@ img{
   margin: 0 auto;
   padding: 0 15px;
 }
+a{
+  @extend %roboto-400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $default;
+}
 
 .title{
   @extend %roboto-700;

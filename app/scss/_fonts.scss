@@ -1,4 +1,13 @@
 @font-face{
+  font-family: 'Poppins-Black';
+  font-weight: 900;
+  font-style: normal;
+
+  src: local('Poppins-Black'),
+       url('../fonts/Poppins-Black.woff2') format('woff2'),
+       url('../fonts/Poppins-Black.woff') format('woff');
+}
+@font-face{
   font-family: 'Roboto-Black';
   font-weight: 900;
   font-style: normal;

@@ -7,7 +7,12 @@ $bg: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
   background-color: $accent;
+  box-shadow: 0px 15px 25px rgba(0, 157, 152, 0.25);
+  border-radius: 4px;
+  border: none;
+  outline: 0;
   @extend %roboto-400;
 }
 %input-mini{
@@ -31,6 +36,10 @@ $bg: #fff;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 10px 50px rgba(19, 15, 64, 0.1);
   border-radius: 4px;
+}
+%poppins-900{
+  font-family: 'Poppins-Black', sans-serif;
+  font-weight: 900;
 }
 %roboto-900{
   font-family: 'Roboto-Black', sans-serif;
