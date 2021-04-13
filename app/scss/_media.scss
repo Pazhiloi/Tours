@@ -1,0 +1,255 @@
+@media(max-width: 1200px){
+  .blog{
+    &__wrapper{
+      min-height: 60vh;
+    }
+    &__form{
+      margin-right: 0;
+    }
+    &__info{
+      padding-top: 15px;
+    }
+  }
+  .footer{
+    &__inner{
+      min-height: 40vh;
+    }
+    &__items{
+      padding-top: 40vh;
+    }
+  }
+}
+@media(max-width: 930px){
+  .top{
+    &__background{
+      min-height: 70vh;
+    }
+    &__svg--background{
+      display: none;
+    }
+  }
+  .about{
+    &__inner{
+      display: block;
+    }
+    &__img-box{
+      margin: 0 auto;
+    }
+    &__content{
+      margin: 150px auto 0;
+      max-width: 100%;
+    }
+    &__form{
+      display: block;
+      margin: 30px auto 30px;
+      width: 200px;
+    }
+    &__input{
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+  .product{
+    &__item{
+      margin-left: 50%;
+      transform: translateX(-50%);
+      max-width: 420px!important;
+    }
+    .prev-arrow{
+      left: 37%;
+      transform: translateX(63%);
+    }
+  }
+  .blog{
+    &__item{
+      margin-left: 180px;
+    }
+    &__info{
+      display: block;
+    }
+    &__address{
+      margin-bottom: 10px;
+    }
+  }
+}
+@media(max-width: 770px){
+  .header{
+    &__title{
+      &::before{
+        display: none;
+      }
+    }
+  }
+  .menu{
+     &__list{
+      transform: translateY(-200%);
+      position: absolute;
+      top: 100px;
+      width: 100%;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      z-index: 5;
+      transition: transform 0.5s ease;
+      background-color: #b4b4b4;
+      &.menu__list--active{
+        transform: translateY(0);
+        transition: transform 0.5s ease;
+      }
+    }
+     &__item + .menu__item{
+        margin-left: 0;
+      }
+      &__item{
+      width: 100%;
+      padding: 0 15px;
+      text-align: center;
+     }
+     &__item:not(:last-child){
+       margin-bottom: 10px;
+     }
+    &__link{
+      padding: 5px 0;
+      display: block;
+     }
+      &__btn{
+      display: block;
+    }
+  }
+  .product{
+    &__top{
+      display: block;
+      text-align: center;
+    }
+    &__link{
+      margin: 0 auto;
+    }
+    &__titles{
+      margin-bottom: 30px;
+    }
+    &__title{
+      font-size: 30px;
+    }
+  }
+  .blog{
+    &__item{
+      margin-left: 20px;
+    }
+  }
+  .footer{
+    &__items{
+      padding-top: 5vh;
+      display: block;
+    }
+    &__social-link{
+      svg{
+        path{
+          fill: #000;
+        }
+      }
+    }
+    &__item-title,
+    &__tel,
+    &__email,
+    &__link,
+    &__text{
+      color: #000;
+    }
+    &__item-title{
+      margin-bottom: 10px;
+    }
+    &__copy{
+      font-size: 10px;
+    }
+  }
+}
+@media(max-width: 550px){
+  .header{
+    &__title{
+      font-size: 40px;
+    }
+  }
+  .top{
+    margin-top: -401px;
+    &__background{
+      min-height: 40vh;
+    }
+    &__svg{
+      display: none;
+    }
+  }
+  .about{
+    &__title{
+      font-size: 30px;
+    }
+    &__img-box{
+      &::after,
+      &::before{
+        display: none;
+      }
+    }
+    &__img-box,
+    &__image{
+      height: 320px;
+    }
+  }
+  .product{
+    .prev-arrow{
+      left: 20%;
+      transform: translateX(-80%);
+    }
+    .next-arrow{
+      left: 80%;
+      transform: translateX(-20%);
+    }
+    &__item{
+      .slick-slide,
+      .slick-current,
+      .slick-active{
+      margin-left: 0;
+    }
+    }
+    &__image{
+      max-width: 420px;
+      width: 100%;
+      height: 350px;
+    }
+    &__price{
+      margin-left: 10px;
+    }
+    &__rate-title{
+      font-size: 25px;
+    }
+    &__rate-box{
+      justify-content: start;
+    }
+  }
+  .blog{
+    &__title{
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    &__address-title{
+      font-size: 30px;
+    }
+    &__link{
+      margin: 0 auto;
+    }
+    &__item{
+      max-width: 379px;
+      margin-left: 0;
+    }
+    .slick-slide,
+    .slick-cloned,
+    .slick-active{
+    padding-left: 0;
+    margin-left: 1px;
+    }
+    &__image{
+      margin-left: 3px;
+    }
+    &__top{
+      display: block;
+    }
+  }
+}
