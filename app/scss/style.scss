@@ -39,7 +39,28 @@
       background-image: url('../images/content/cloud.svg');
     }
   }
- 
+  &__fixed{
+    padding: 10px 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:  #fff;
+    animation-name: show__header;
+    animation-duration: 1s;
+    justify-content: space-around;
+  }
+  @keyframes show__header{
+  0%{
+    opacity: 0;
+    top: -70px;
+  }
+  100%{
+    opacity: 1;
+    top: 0;
+  }
+  }
 }
 .menu{
   &__list{
