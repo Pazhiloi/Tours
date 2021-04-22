@@ -1,4 +1,9 @@
 @media(max-width: 1200px){
+  .header{
+    &__title{
+      display: none;
+    }
+  }
   .blog{
     &__wrapper{
       min-height: 60vh;
@@ -73,13 +78,6 @@
   }
 }
 @media(max-width: 770px){
-  .header{
-    &__title{
-      &::before{
-        display: none;
-      }
-    }
-  }
   .menu{
      &__list{
       transform: translateY(-200%);
@@ -164,11 +162,6 @@
   }
 }
 @media(max-width: 550px){
-  .header{
-    &__title{
-      font-size: 40px;
-    }
-  }
   .top{
     margin-top: -401px;
     &__background{
